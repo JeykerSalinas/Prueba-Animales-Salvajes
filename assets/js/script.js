@@ -72,12 +72,12 @@ const renderAnimals = (a) => {
 
   animales.innerHTML += 
 
-    `<div class="text-white w-25 card h-25">
-    <img src="./assets/imgs/${a.img()}" alt="" class="" />
-    <audio class="w-100" controls>
-      <source src="./assets/sounds/${a.sonido()}" type="audio/ogg" />
-    </audio>
-  </div>`
+  `<div class="text-white  card col-2 h-10 mx-2" style="background-image: url(./assets/imgs/${a.img()}); background-size: cover ; background-position: center ;height: 200px;">
+            <!-- <img src="./assets/imgs/${a.img()}" alt="" class="card-img" /> -->
+            <audio class="w-100" controls>
+              <source src="./assets/sounds/${a.sonido()}" type="audio/ogg" />
+            </audio>
+          </div>`
 
 
 
